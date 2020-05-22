@@ -121,3 +121,52 @@ client.run('Your token from Step 1')
 ## Step 5: Start Hacking
 
 So now that you've got your bot set up, what's next? Well, of course, start building! Take the next 30 minutes and see what you can come up with. Be ready to share your bot's commands with others for them to try out what you make!
+
+## Examples
+
+### Add a command
+
+Let's say we want to add a new command. Here's what you would do:
+
+```python
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('$hello'):
+        await message.channel.send('Hello!')
+    elif message.content.startswith('$hola'):
+	await message.channel.send('Hola amigo!')
+```
+
+### Echo
+
+A simple `echo` bot:
+
+```python
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    await message.channel.send(message.content)
+```
+
+### Send a random picture
+
+When someone sends `$pic`, send a link to a random picture from https://picsum.photos/. _Note: the `? + randrange()` is just for making discord fetch a new picture everytime you send the same link._
+
+```python
+from random import randrange
+
+...
+
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('$pic'):
+        await message.channel.send('https://picsum.photos/400/400?' + str(randrange(1000)))
+```
