@@ -1,6 +1,6 @@
-# Build a Discord Bot
+Welcome to this workshop! We're going to build a Discord bot with [discord.py](https://discordpy.readthedocs.io/en/latest/) and Python. Let's dive right into it!
 
-Welcome to this workshop on building a Discord bot with discord.py and Python. Let's dive right into it!
+# Build a Discord Bot
 
 ## Prerequisites
 
@@ -38,15 +38,15 @@ Welcome to this workshop on building a Discord bot with discord.py and Python. L
 
 ## Step 2: Invite Your Bot
 
-1.  Go to the “OAuth2” tab.
+1.  Go to the “OAuth2” tab
 
     ![How the OAuth2 page should look like.](https://discordpy.readthedocs.io/en/latest/_images/discord_oauth2.png)
 
-2.  Tick the “bot” checkbox under “scopes”.
+2.  Tick the “bot” checkbox under “scopes”
 
     ![The scopes checkbox with "bot" ticked.](https://discordpy.readthedocs.io/en/latest/_images/discord_oauth2_scope.png)
 
-3.  Tick the permissions required for your bot to function under “Bot Permissions”.
+3.  Tick the permissions required for your bot to function under “Bot Permissions”
 
     ![The permission checkboxes with some permissions checked.](https://discordpy.readthedocs.io/en/latest/_images/discord_oauth2_perms.png)
 
@@ -120,4 +120,4 @@ client.run('Your token from Step 1')
 
 ## Step 5: Start Hacking
 
-So now that you've got your bot set up, what's next? Well, of course, start building! Take the next 30 minutes and see what you can come up with. Be sure to be ready to share your bot's commands with others for them to try out what you make!
+So now that you've got your bot set up, what's next? Well, of course, start building! Take the next 30 minutes and see what you can come up with. Be ready to share your bot's commands with others for them to try out what you make!
